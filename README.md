@@ -1,2 +1,2 @@
 # squirdl
-##Pokémon based Wordl Clone
+## Pokémon based Wordl Clone
