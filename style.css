@@ -1,0 +1,113 @@
+* {
+  color: black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
+h1 {
+  color: black;
+}
+
+.game-container {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-container {
+  text-align: center;
+  width: 510px;
+  border-bottom: solid 1px #3a3a3c;
+}
+
+.tile-container {
+  width: 700px;
+  margin-bottom: 30px;
+}
+
+.key-container {
+  width: 510px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.key-container button {
+  width: 43px;
+  height: 58px;
+  border-radius: 4px;
+  border: none;
+  background-color: #c4c4c4;
+  margin: 4px;
+}
+
+.key-container button:nth-child(11) {
+  margin-left: 30px;
+}
+
+.key-container button:nth-child(20),
+.key-container button:nth-child(28) {
+  width: 68px;
+}
+
+.tile-container div {
+  display: flex;
+  justify-content: center;
+}
+
+.tile-container .tile {
+  width: 62px;
+  height: 62px;
+  border: 2px solid#3a3a3c;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+}
+
+.message-container {
+  height: 30px;
+}
+
+.message-container p {
+  background-color: #5f5f5f;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0;
+}
+
+.tile.flip {
+  animation: 0.5s linear flipping;
+}
+
+@keyframes flipping {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+.grey-overlay {
+  background-color: #747474fa !important;
+  border: none !important;
+}
+.yellow-overlay {
+  background-color: #f5c800 !important;
+  border: none !important;
+}
+
+.green-overlay {
+  background-color: #0a7400 !important;
+  border: none !important;
+}
